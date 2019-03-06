@@ -39,7 +39,7 @@ describe('configurator', () => {
 
     config = configure({ context, target: 'node' });
     strictEqual(config.spriteModule, 'svg-sprite-loader/runtime/sprite.build');
-    strictEqual(config.symbolModule, 'svg-baker-runtime/symbol');
+    strictEqual(config.symbolModule, '@leo-burnett-melbourne/svg-baker-runtime/symbol');
   });
 
   it('should properly autodetect extract mode', () => {
